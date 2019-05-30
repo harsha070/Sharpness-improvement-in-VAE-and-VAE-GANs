@@ -1,5 +1,4 @@
 # example from https://github.com/pytorch/examples/blob/master/vae/main.py
-# commented and type annotated by Charl Botha <cpbotha@vxlabs.com>
 
 import os
 import torch
@@ -215,7 +214,6 @@ def loss_function(recon_x, x, mu, logvar,epoch,TRAIN) -> Variable:
 
     return BCE + KLD
 
-# Dr Diederik Kingma: as if VAEs weren't enough, he also gave us Adam!
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
 
